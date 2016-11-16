@@ -475,15 +475,15 @@ HTTPS = 'on'
 ROOT_URLCONF = 'cms.urls'
 
 # Email
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'localhost'
-EMAIL_PORT = 25
-EMAIL_USE_TLS = False
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-DEFAULT_FROM_EMAIL = 'registration@example.com'
-DEFAULT_FEEDBACK_EMAIL = 'feedback@example.com'
-SERVER_EMAIL = 'devops@example.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'staging@moov.life'
+EMAIL_HOST_PASSWORD = 'pbrugfycvncbmseb'
+DEFAULT_FROM_EMAIL = 'staging@moov.life'
+DEFAULT_FEEDBACK_EMAIL = 'staging@moov.life'
+SERVER_EMAIL = 'staging@moov.life'
 ADMINS = ()
 MANAGERS = ADMINS
 

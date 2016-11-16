@@ -7,6 +7,8 @@ from django.conf import settings
 
 # Force settings to run so that the python path is modified
 settings.INSTALLED_APPS  # pylint: disable=pointless-statement
+print "------------------"
+print settings.INSTALLED_APPS
 
 from openedx.core.lib.django_startup import autostartup
 import edxmako
